@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --maincolor: #00bfa5;
+    --secondcolor: #ff9800;
+    --thirdcolor: #ffc107;
+    --textcolor: #333;
+    --backgroundcolor: #f7f7f7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--backgroundcolor);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    width: 100%;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    background-color: white;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+}
+
+.logo {
+    width: 180px;
+}
+
+.logo img {
+    width: 100%;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2)); /* Modern shadow effect */
+}
+
+.navbar a {
+    color: var(--textcolor);
+    font-size: 1.8rem;
+    margin: 1rem;
+    position: relative;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: var(--maincolor);
+}
+
+.navbar a::after {
+    content: "";
+    background-color: var(--maincolor);
+    width: 0;
+    position: absolute;
+    height: 0.3rem;
+    left: 0;
+    top: 100%;
+    transition: width .4s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+#menu-bars {
+    color: var(--textcolor);
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+.right-icons .btn {
+    padding: 1.2rem 2rem;
+    font-size: 1.7rem;
+    background: var(--maincolor);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-icons .btn:hover {
+    background-color: var(--secondcolor);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Home Section */
+.main-home {
+    padding: 2rem 7%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/blurbg1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    align-items: center;
+}
+
+.home .home-left-content span {
+    font-size: 2.5rem;
+    color: var(--maincolor);
+    padding: 1rem 0;
+    font-weight: bold;
+}
+
+.home-left-content h2 {
+    font-size: 5rem;
+    margin: 1.5rem 0;
+    line-height: 1.2;
+}
+
+.home-left-content p {
+    font-size: 1.8rem;
+    color: var(--textcolor);
+    line-height: 1.8;
+    max-width: 50rem;
+    margin: auto;
+    color: #e0e0e0;
+}
+
+.home-btn {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.home-btn a {
+    padding: 1.5rem 3rem;
+    background-color: var(--maincolor);
+    font-size: 1.8rem;
+    color: white;
+    border-radius: 30px;
+    transition: background-color .3s ease;
+}
+
+.home-btn a:hover {
+    background-color: var(--secondcolor);
+    transform: translateY(-5px);
+}
+
+.homebtnsec {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.homebtnsec:hover {
+    background-color: white;
+    color: var(--maincolor);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-devs {
+    margin-bottom: 10px;
+}
+
+.contact-devs h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.contact-devs a {
+    color: #00bfa5;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.contact-devs a:hover {
+    text-decoration: underline;
+}
+
+.copyright p {
+    font-size: 1.4rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #menu-bars {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .right-icons .btn {
+        font-size: 1.6rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .home-left-content h2 {
+        font-size: 4rem;
+    }
+
+    .home-btn {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
