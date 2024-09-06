@@ -1,0 +1,93 @@
+/* view_patients.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+td {
+    font-size: 1rem;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 0.75rem;
+    }
+}

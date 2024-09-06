@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #00bfa5;
+    --secondary-color: #4caf50;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --white: #fff;
+    --light-gray: #e0e0e0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 1.6rem; /* Increased base font size */
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px; /* Increased spacing between items */
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.4rem; /* Increased font size for nav links */
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 20px;
+    padding: 25px; /* Increased padding */
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2.4rem; /* Increased font size for h2 */
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: 2rem; /* Increased font size for h3 */
+    color: var(--primary-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: var(--light-gray);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem; /* Increased font size for list items */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1.4rem; /* Increased font size for footer text */
+}
+
+#testimonials {
+    margin-top: 20px;
+}
+
+#testimonials p {
+    font-style: italic;
+    background-color: var(--light-gray);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.6rem; /* Increased font size for testimonials */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    margin: 20px auto;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem; /* Increased font size for flex container */
+}
